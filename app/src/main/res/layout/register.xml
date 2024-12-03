@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity"
     android:background="#E4E0E1">
 
     <!-- Material Toolbar (Header) -->
@@ -48,15 +47,14 @@
         app:layout_constraintTop_toBottomOf="@id/textView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintMarginTop="32dp"/>
-
+        />
     <!-- EditText for Email Address -->
 
     <!-- EditText for Password -->
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="0dp"
-        android:layout_height="47dp"
+        android:layout_height="48dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="40dp"
@@ -64,7 +62,6 @@
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintMarginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextText2" />
 
@@ -80,7 +77,6 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintMarginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress" />
 
@@ -88,7 +84,7 @@
     <EditText
         android:id="@+id/editTextTextPassword2"
         android:layout_width="0dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="40dp"
@@ -99,7 +95,6 @@
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintMarginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextTextPassword" />
 
@@ -114,7 +109,6 @@
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintMarginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextTextPassword2" />
 
@@ -127,7 +121,7 @@
         app:layout_constraintTop_toBottomOf="@id/button2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintMarginTop="16dp" />
+         />
 
     <!-- TextView for Login Link -->
     <TextView
@@ -140,6 +134,6 @@
         app:layout_constraintTop_toBottomOf="@id/textView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintMarginTop="8dp" />
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

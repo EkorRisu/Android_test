@@ -5,6 +5,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.crud.R
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -15,7 +16,7 @@ class RegisterActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
+        setContentView(R.layout.register)
 
         // Initialize UI elements
         usernameEditText = findViewById(R.id.editTextText2)  // Periksa ID di XML

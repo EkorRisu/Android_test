@@ -1,4 +1,4 @@
-package com.example.curd
+package com.example.crud;
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,8 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.crud.R
+import com.example.curd.RegisterActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -57,10 +59,6 @@ class MainActivity : AppCompatActivity() {
                 if (username == "testuser" && password == "testpassword") {
                     Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
 
-                    // Proceed to next screen (for example, Main Dashboard)
-                    val intent = Intent(this, DashboardActivity::class.java)
-                    startActivity(intent)
-                    finish()
                 } else {
                     Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show()
                 }
@@ -72,5 +70,6 @@ class MainActivity : AppCompatActivity() {
         // Redirect to Register Activity
         val intent = Intent(this, RegisterActivity::class.java)
         startActivity(intent)
+
     }
 }
